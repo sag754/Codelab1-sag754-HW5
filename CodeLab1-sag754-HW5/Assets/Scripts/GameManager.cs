@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
-        infoText.text = "Coins x " + PlayerController.instance.Score;
+        infoText.text = "Coins x " + PlayerController.instance.Coins;
         infoTime.text = "Time: " + (int)timer;
     }
 }

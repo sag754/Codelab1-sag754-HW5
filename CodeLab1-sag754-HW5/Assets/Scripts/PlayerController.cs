@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 5f;
-    public float Score = 0;
+    public float Coins = 0;
 
     public Rigidbody2D rb;
     public Animator animator;
@@ -59,8 +59,8 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Coin"))
         {
-            Score++;
-            Debug.Log("Score: " + Score);
+            Coins++;
+            Debug.Log("Coins: " + Coins);
             source.Play();
         }
     }
