@@ -8,6 +8,7 @@ public class ASCIILevelLoader : MonoBehaviour
     public GameObject wall;
     public GameObject player;
     public GameObject coin;
+    public GameObject floor;
 
     public float xOffset = -5;
     public float yOffset = 5;
@@ -43,7 +44,7 @@ public class ASCIILevelLoader : MonoBehaviour
 
                 switch (characters[x])
                 {
-                    case 'x':
+                    case 'X':
                         newObject = Instantiate<GameObject>(wall);
                         newObject.transform.SetParent(wallHolder.transform); //make the parent of th new wall, Wall Holder
                         newObject.transform.position =
@@ -56,6 +57,11 @@ public class ASCIILevelLoader : MonoBehaviour
                         break;
                     case 'C':
                         newObject = Instantiate<GameObject>(coin);
+                        newObject.transform.position =
+                                     new Vector2(x + xOffset, -y + yOffset);
+                        break;
+                    case 'E':
+                        newObject = Instantiate<GameObject>(floor);
                         newObject.transform.position =
                                      new Vector2(x + xOffset, -y + yOffset);
                         break;
