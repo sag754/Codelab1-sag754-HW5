@@ -22,7 +22,7 @@ public class LevelForwarder : MonoBehaviour
 
     }
 
-    private void OnTriggerEnter(Collider2D other)
+    private void OnTriggerEnter(Collider other)
     {
         currentLevel++;
         SceneManager.LoadScene(currentLevel);
