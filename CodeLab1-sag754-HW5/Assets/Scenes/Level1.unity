@@ -325,9 +325,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wall: {fileID: 1598143753517361145, guid: da33fa05f844e484f815053f1a49b050, type: 3}
-  player: {fileID: 5322278632676180488, guid: 7d9f1ae4d5e4ac946a264634dcc3314c, type: 3}
+  player: {fileID: 3744744093580832137, guid: 7d9f1ae4d5e4ac946a264634dcc3314c, type: 3}
   coin: {fileID: 6101401819722478800, guid: d30ca31446f45244e89d65eded501a59, type: 3}
-  floor: {fileID: 0}
+  floor: {fileID: 490939954784808417, guid: c929250b01d23ad4da3c2824de8e7978, type: 3}
   xOffset: -5
   yOffset: 5
   fileLevel: Level1.txt
